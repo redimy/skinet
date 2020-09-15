@@ -21,16 +21,15 @@ namespace API
             _config = config;
         }
 
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
-            services.AddDbContext<StoreContext>(x => 
+            services.AddDbContext<StoreContext>(x =>
                 x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
-            
+
             services.AddDbContext<AppIdentityDbContext>(x => 
             {
                 x.UseSqlite(_config.GetConnectionString("IdentityConnection"));
@@ -58,7 +57,6 @@ namespace API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseMiddleware<ExceptionMiddleware>();
-
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
@@ -70,8 +68,8 @@ namespace API
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
-            app.UserSwaggerDocumentation();
+
+            app.UseSwaggerDocumention();
 
             app.UseEndpoints(endpoints =>
             {

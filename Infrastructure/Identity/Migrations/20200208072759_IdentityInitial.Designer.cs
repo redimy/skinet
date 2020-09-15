@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20200813193611_IdentityInitial")]
+    [Migration("20200208072759_IdentityInitial")]
     partial class IdentityInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.5");
+                .HasAnnotation("ProductVersion", "3.1.1");
 
             modelBuilder.Entity("Core.Entities.Identity.Address", b =>
                 {
@@ -25,7 +25,6 @@ namespace Infrastructure.Identity.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("AppUserId")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("City")
@@ -251,11 +250,9 @@ namespace Infrastructure.Identity.Migrations
 
             modelBuilder.Entity("Core.Entities.Identity.Address", b =>
                 {
-                    b.HasOne("Core.Entities.Identity.AppUser", "MyProperty")
+                    b.HasOne("Core.Entities.Identity.AppUser", "AppUser")
                         .WithOne("Address")
-                        .HasForeignKey("Core.Entities.Identity.Address", "AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Core.Entities.Identity.Address", "AppUserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -29,16 +29,15 @@ namespace API.Controllers
         public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasketDto basket)
         {
             var customerBasket = _mapper.Map<CustomerBasketDto, CustomerBasket>(basket);
-            
+
             var updatedBasket = await _basketRepository.UpdateBasketAsync(customerBasket);
 
             return Ok(updatedBasket);
         }
 
         [HttpDelete]
-        public async Task DeleteBasket(string id)
+        public async Task DeleteBasketAsync(string id)
         {
-            ;
             await _basketRepository.DeleteBasketAsync(id);
         }
     }

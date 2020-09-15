@@ -1,0 +1,101 @@
+[33mcommit dfc81db48ee3de28abe1e123531a5bcd797481ec[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Mon Sep 14 22:32:09 2020 -0500
+
+    end of section 18
+
+[33mcommit 686e428d3dbd16892e220ca0c833aa42501ac354[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Wed Aug 19 21:12:42 2020 -0500
+
+    end of section 17 - login and register forms - text input - validation and authguard
+
+[33mcommit 8462561e49b6758957acc08ce5330dbb11e3d976[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Tue Aug 18 13:41:19 2020 -0500
+
+    end of section 16 - Api Validation
+
+[33mcommit 665821287d359419691bd382f8cb7805c4f633fa[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sat Aug 15 20:12:06 2020 -0500
+
+    end of section 15 - Identity - token en API
+
+[33mcommit 7566bbb4e73d9bf561a9da5eb8ad0d7b39ff4017[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Wed Aug 12 00:08:44 2020 -0500
+
+    End of section 14 - basket
+
+[33mcommit 1bab6ed7ad4f66fae38338b1bf998d9e78c546ab[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Thu Aug 6 18:36:18 2020 -0500
+
+    End of section 13 - basket
+
+[33mcommit c4e79edfdc9da569d91382aaf839965636987ad8[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Tue Aug 4 13:38:34 2020 -0500
+
+    End of section 12 - loading and styling
+
+[33mcommit 001cd9c871f3cf0713dddffa056cb25629ccd60c[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Mon Aug 3 15:45:26 2020 -0500
+
+    End of section 11 - error handling
+
+[33mcommit b64ea0a9bf140859dadbcf13a73dcfacb616964b[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sat Aug 1 17:51:38 2020 -0500
+
+    End of section 10 - routing and product details
+
+[33mcommit 93090c3b252cb80404b563f7e3f187ea13d3b9c0[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Fri Jul 31 21:27:31 2020 -0500
+
+    End of section 9 - Filters, search and pagination
+
+[33mcommit c8e4155c4c7ac26ce86c6ed039ca2bfc9bc19bac[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sat Jul 18 18:08:14 2020 -0500
+
+    end of section 8 - http products
+
+[33mcommit fa5743a7ed056c02c5c0f01e66f4e6d1c6831a8f[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sun Jul 12 11:30:57 2020 -0500
+
+    End of section 7 - Angular Added
+
+[33mcommit 0ffa2c803501ecbfc4c07307c8956d7673c60777[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sun Jul 12 10:12:32 2020 -0500
+
+    End of section 6 - filtering, search and paging
+
+[33mcommit 37b8ac9c55176fe2d4649b732e6d39ab37aae8f0[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sun Jul 12 00:57:14 2020 -0500
+
+    End of section 5 - error handling - swagger api documentation
+
+[33mcommit c27900ba94f9f386f49badaca3b1a333620ea2c9[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Sat Jul 11 23:09:27 2020 -0500
+
+    End of section 4 generic repository
+
+[33mcommit 234730970c9c0c325ea7919248a94a748329563d[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Fri Jul 10 19:57:05 2020 -0500
+
+    End of section 3 - products
+
+[33mcommit f1bae5afd33cc662eb11fa90100ccba067bfb028[m
+Author: Dimitri Granados <redimy@outlook.com>
+Date:   Tue Jul 7 16:40:20 2020 -0500
+
+    Initial Commit
