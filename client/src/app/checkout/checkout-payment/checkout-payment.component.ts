@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { NavigationExtras, Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
 import { BasketService } from 'src/app/basket/basket.service';
+import { CheckoutService } from '../checkout.service';
+import { ToastrService } from 'ngx-toastr';
 import { IBasket } from 'src/app/shared/models/basket';
 import { IOrder } from 'src/app/shared/models/order';
-import { CheckoutService } from '../checkout.service';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-checkout-payment',
@@ -15,16 +15,19 @@ import { CheckoutService } from '../checkout.service';
 export class CheckoutPaymentComponent implements OnInit {
   @Input() checkoutForm: FormGroup;
 
-  constructor(private basketService: BasketService, private checkoutService: CheckoutService,
-      private toastr: ToastrService, private router: Router) { }
+  constructor(
+    private basketService: BasketService,
+    private checkoutService: CheckoutService,
+    private toastr: ToastrService,
+    private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   submitOrder() {
     const basket = this.basketService.getCurrentBasketValue();
     const orderToCreate = this.getOrderToCreate(basket);
-    this.checkoutService.createOrder(orderToCreate).subscribe((order: IOrder) => {
+    this.checkoutService.creatOrder(orderToCreate).subscribe((order: IOrder) => {
       this.toastr.success('Order created successfully');
       this.basketService.deleteLocalBasket(basket.id);
       const navigationExtras: NavigationExtras = {state: order};
